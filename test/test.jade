@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Demo
+        link(rel="stylesheet" href="../bower_components/jstree/dist/themes/default/style.min.css")
+    body
+        div
+            button(onclick="addRootDir()") add root dir
+            button(onclick="selectItem()") select item
+            button(onclick="deleteItem()") delete select item
+        div.jstree
+
+        script(src="../bower_components/requirejs/require.js")
+        script(src="config.js")
+        script.
+            require(['test/test'])
